@@ -11,7 +11,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className="fira-code-font first-bg">
+        <div className="background-animation custom-border second-bg rounded-lg mx-[2vw] min-w-[96vw] my-[3vh] min-h-[94vh]">
+          <span className="circle"></span> {/* Additional element for the third circle */}
+          {children}
+        </div>
+      </body>
     </html>
   );
 }

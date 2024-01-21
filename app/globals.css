@@ -2,32 +2,194 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: 'Fira Code';
+  src: url('/fonts/fira-code/FiraCode-Variable.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: 'Fira Code';
+  src: url('/fonts/fira-code/FiraCode-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  /* SemiBold */
+  font-style: normal;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: 'Fira Code';
+  src: url('/fonts/fira-code/FiraCode-Retina.ttf') format('truetype');
+  font-weight: 500;
+  /* Retina */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('/fonts/fira-code/FiraCode-Regular.ttf') format('truetype');
+  font-weight: 400;
+  /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('/fonts/fira-code/FiraCode-Medium.ttf') format('truetype');
+  font-weight: 500;
+  /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('/fonts/fira-code/FiraCode-Light.ttf') format('truetype');
+  font-weight: 300;
+  /* Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('/fonts/fira-code/FiraCode-Bold.ttf') format('truetype');
+  font-weight: 700;
+  /* Bold */
+  font-style: normal;
+}
+
+.fira-code-font {
+  font-family: 'Fira Code', monospace;
+  font-weight: normal;
+  font-style: normal;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.first-bg {
+  background-color: #010D15;
+}
+
+.second-bg {
+  background-color: #01101b;
+  color: white;
+}
+
+.custom-border {
+  border: 1px solid #1E2D3D;
+}
+
+
+/*animation css*/
+
+@keyframes moveCircle1 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(calc(100vw - 200px), calc(100vh - 200px));
+  }
+
+  50% {
+    transform: translate(0, calc(100vh - 200px));
+  }
+
+  75% {
+    transform: translate(calc(100vw - 200px), 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes moveCircle2 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(calc(100vw - 300px), 0);
+  }
+
+  50% {
+    transform: translate(0, calc(100vh - 300px));
+  }
+
+  75% {
+    transform: translate(calc(100vw - 300px), calc(100vh - 300px));
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes moveCircle3 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(0, calc(100vh - 250px));
+  }
+
+  50% {
+    transform: translate(calc(100vw - 250px), 0);
+  }
+
+  75% {
+    transform: translate(calc(100vw - 250px), calc(100vh - 250px));
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.background-animation {
+  position: relative;
+  overflow: hidden;
+  width: 96vw;
+  height: 94vh;
+}
+
+.background-animation::before,
+.background-animation::after,
+.background-animation .circle {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background-image: radial-gradient(circle, #ff416c, #ff4b2b);
+  filter: blur(80px);
+  z-index: 0;
+}
+
+.background-animation::before {
+  width: 150px;
+  height: 150px;
+  animation: moveCircle1 15s infinite alternate;
+}
+
+.background-animation::after {
+  width: 150px;
+  height: 150px;
+  background-image: radial-gradient(circle, #21D4FD, #B721FF);
+  animation: moveCircle2 20s infinite alternate;
+}
+
+.background-animation .circle {
+  width: 150px;
+  height: 150px;
+  background-image: radial-gradient(circle, #08AEEA, #2AF598);
+  animation: moveCircle3 18s infinite alternate-reverse;
+}
+
+.background-animation>* {
+  position: relative;
+  z-index: 1;
 }
