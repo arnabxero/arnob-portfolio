@@ -69,20 +69,6 @@
   }
 }
 
-.first-bg {
-  background-color: #010D15;
-}
-
-.second-bg {
-  background-color: #01101b;
-  color: white;
-}
-
-.custom-border {
-  border: 1px solid #1E2D3D;
-}
-
-
 /*animation css*/
 
 @keyframes moveCircle1 {
@@ -163,7 +149,6 @@
 .background-animation .circle {
   content: '';
   position: absolute;
-  border-radius: 50%;
   background-image: radial-gradient(circle, #ff416c, #ff4b2b);
   filter: blur(80px);
   z-index: 0;
@@ -195,8 +180,8 @@
 }
 
 .theme-rose {
-  --background: #FFFFFF;
-  --foreground: #0A0A0C;
+  --background: #100000;
+  --foreground: #250000;
   --card: #FFFFFF;
   --card-foreground: #0A0A0C;
   --popover: #FFFFFF;
@@ -211,15 +196,15 @@
   --accent-foreground: #191A27;
   --destructive: #E53935;
   --destructive-foreground: #FAFAFA;
-  --border: #E6E7ED;
+  --border: #935c7a;
   --input: #E6E7ED;
   --ring: #F4436D;
-  --radius: 0.3rem;
+  --radius: 0.5rem;
 }
 
 .theme-night {
-  --background: #FFFFFF;
-  --foreground: #0C1626;
+  --background: #010D15;
+  --foreground: #011727;
   --card: #FFFFFF;
   --card-foreground: #0C1626;
   --popover: #FFFFFF;
@@ -234,8 +219,54 @@
   --accent-foreground: #1C2738;
   --destructive: #E53935;
   --destructive-foreground: #F2F6FC;
-  --border: #E4ECF6;
+  --border: #5C7893;
   --input: #E4ECF6;
   --ring: #0057B8;
-  --radius: 0.3rem;
+  --radius: 0.5rem;
+}
+
+.theme-green {
+  --background: #00190c;
+  --foreground: #002411;
+  --card: #FFFFFF;
+  --card-foreground: #0A0A0C;
+  --popover: #FFFFFF;
+  --popover-foreground: #0A0A0C;
+  --primary: #3BB273;
+  --primary-foreground: #FFEBED;
+  --secondary: #00813c;
+  --secondary-foreground: #191A27;
+  --muted: #EFF0F4;
+  --muted-foreground: #757889;
+  --accent: #EFF0F4;
+  --accent-foreground: #191A27;
+  --destructive: #E53935;
+  --destructive-foreground: #FAFAFA;
+  --border: #5c935d;
+  --input: #E6E7ED;
+  --ring: #3BB273;
+  --radius: 0.5rem;
+}
+
+.theme-orange {
+  --background: #180d00;
+  --foreground: #2c1a00;
+  --card: #FFFFFF;
+  --card-foreground: #070504;
+  --popover: #FFFFFF;
+  --popover-foreground: #070504;
+  --primary: #FF9500;
+  --primary-foreground: #FEFCF8;
+  --secondary: rgb(189, 95, 0);
+  --secondary-foreground: #1A1717;
+  --muted: #FEFDFC;
+  --muted-foreground: #736C6B;
+  --accent: #FEFDFC;
+  --accent-foreground: #1A1717;
+  --destructive: #E53935;
+  --destructive-foreground: #FEFCF8;
+  --border: #937c5c;
+  --input: #EBE0DF;
+  --ring: #FF9500;
+  --radius: 0.5rem;
 }

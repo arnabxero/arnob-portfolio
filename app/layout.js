@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from '@/contexts/ThemeContext';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,13 +12,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="fira-code-font first-bg">
-        <div className="background-animation custom-border second-bg rounded-lg mx-[2vw] min-w-[96vw] my-[3vh] min-h-[94vh]">
-          <span className="circle"></span> {/* Additional element for the third circle */}
-          <div className='theme-night'>
-            {children}
-          </div>
-        </div>
+      <body className="fira-code-font">
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
