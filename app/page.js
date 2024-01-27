@@ -1,12 +1,11 @@
 import React from 'react'
-import Topbar from '@/components/navigation/Topbar'
 
 const page = () => {
   return (
-    <div className=''>
-      <Topbar />
-      Hello
-
+    <div className="p-4">
+      <h1 className="text-primary">Welcome to the Themed App</h1>
+      <p className="text-secondary">This is an example component.</p>
+      {/* More content */}
     </div>
   )
 }

@@ -193,3 +193,49 @@
   position: relative;
   z-index: 1;
 }
+
+.theme-rose {
+  --background: #FFFFFF;
+  --foreground: #0A0A0C;
+  --card: #FFFFFF;
+  --card-foreground: #0A0A0C;
+  --popover: #FFFFFF;
+  --popover-foreground: #0A0A0C;
+  --primary: #fe3967;
+  --primary-foreground: #FFEBED;
+  --secondary: #cf0030;
+  --secondary-foreground: #191A27;
+  --muted: #EFF0F4;
+  --muted-foreground: #757889;
+  --accent: #EFF0F4;
+  --accent-foreground: #191A27;
+  --destructive: #E53935;
+  --destructive-foreground: #FAFAFA;
+  --border: #E6E7ED;
+  --input: #E6E7ED;
+  --ring: #F4436D;
+  --radius: 0.3rem;
+}
+
+.theme-night {
+  --background: #FFFFFF;
+  --foreground: #0C1626;
+  --card: #FFFFFF;
+  --card-foreground: #0C1626;
+  --popover: #FFFFFF;
+  --popover-foreground: #0C1626;
+  --primary: #3994fb;
+  --primary-foreground: #F2F6FC;
+  --secondary: #005bc4;
+  --secondary-foreground: #1C2738;
+  --muted: #EAF2FC;
+  --muted-foreground: #758BA3;
+  --accent: #EAF2FC;
+  --accent-foreground: #1C2738;
+  --destructive: #E53935;
+  --destructive-foreground: #F2F6FC;
+  --border: #E4ECF6;
+  --input: #E4ECF6;
+  --ring: #0057B8;
+  --radius: 0.3rem;
+}
