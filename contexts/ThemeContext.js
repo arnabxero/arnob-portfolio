@@ -14,7 +14,7 @@ export const ThemeProvider = ({ children }) => {
     };
 
     // Get the initial theme from localStorage or set it to a random one if not found
-    const initialTheme = localStorage.getItem('theme') || getRandomTheme();
+    const initialTheme = /*localStorage.getItem('theme') ||*/ getRandomTheme();
 
     // Set the initial theme
     const [theme, setTheme] = useState(initialTheme);

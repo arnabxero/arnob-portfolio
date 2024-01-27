@@ -150,26 +150,27 @@
   content: '';
   position: absolute;
   background-image: radial-gradient(circle, #ff416c, #ff4b2b);
-  filter: blur(80px);
+  filter: blur(30px);
   z-index: 0;
 }
 
 .background-animation::before {
-  width: 150px;
-  height: 150px;
+  width: 10vw;
+  height: 10vw;
   animation: moveCircle1 15s infinite alternate;
 }
 
 .background-animation::after {
-  width: 150px;
-  height: 150px;
+  width: 10vw;
+  height: 10vw;
+  margin-top: -94vh;
   background-image: radial-gradient(circle, #21D4FD, #B721FF);
   animation: moveCircle2 20s infinite alternate;
 }
 
 .background-animation .circle {
-  width: 150px;
-  height: 150px;
+  width: 10vw;
+  height: 10vw;
   background-image: radial-gradient(circle, #08AEEA, #2AF598);
   animation: moveCircle3 18s infinite alternate-reverse;
 }
@@ -187,12 +188,12 @@
   --popover: #FFFFFF;
   --popover-foreground: #0A0A0C;
   --primary: #fe3967;
-  --primary-foreground: #FFEBED;
+  --primary-foreground: #ffc9d6;
   --secondary: #cf0030;
   --secondary-foreground: #191A27;
   --muted: #EFF0F4;
   --muted-foreground: #757889;
-  --accent: #EFF0F4;
+  --accent: #ff006a;
   --accent-foreground: #191A27;
   --destructive: #E53935;
   --destructive-foreground: #FAFAFA;
@@ -210,12 +211,12 @@
   --popover: #FFFFFF;
   --popover-foreground: #0C1626;
   --primary: #3994fb;
-  --primary-foreground: #F2F6FC;
+  --primary-foreground: #c9cdff;
   --secondary: #005bc4;
   --secondary-foreground: #1C2738;
   --muted: #EAF2FC;
   --muted-foreground: #758BA3;
-  --accent: #EAF2FC;
+  --accent: #0000ff;
   --accent-foreground: #1C2738;
   --destructive: #E53935;
   --destructive-foreground: #F2F6FC;
@@ -233,12 +234,12 @@
   --popover: #FFFFFF;
   --popover-foreground: #0A0A0C;
   --primary: #3BB273;
-  --primary-foreground: #FFEBED;
+  --primary-foreground: rgb(235, 255, 240);
   --secondary: #00813c;
   --secondary-foreground: #191A27;
   --muted: #EFF0F4;
   --muted-foreground: #757889;
-  --accent: #EFF0F4;
+  --accent: #00ff95;
   --accent-foreground: #191A27;
   --destructive: #E53935;
   --destructive-foreground: #FAFAFA;
@@ -256,12 +257,12 @@
   --popover: #FFFFFF;
   --popover-foreground: #070504;
   --primary: #FF9500;
-  --primary-foreground: #FEFCF8;
+  --primary-foreground: #ffe7c9;
   --secondary: rgb(189, 95, 0);
   --secondary-foreground: #1A1717;
   --muted: #FEFDFC;
   --muted-foreground: #736C6B;
-  --accent: #FEFDFC;
+  --accent: #ffcc00;
   --accent-foreground: #1A1717;
   --destructive: #E53935;
   --destructive-foreground: #FEFCF8;
