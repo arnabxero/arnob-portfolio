@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import { useTheme } from '@/contexts/ThemeContext';
 import Topbar from '@/components/navigation/Topbar';
-
+import HomePage from '@/components/MainPages/HomePage';
 
 const page = () => {
   const { theme, setTheme } = useTheme();
@@ -16,6 +16,11 @@ const page = () => {
         <span className="circle"></span>
         <div className="h-full w-full">
           <Topbar allTabs={allTabs} activeTab={activeTab} setActiveTab={setActiveTab} />
+          {activeTab === '_Hello' &&
+            (<>
+              <HomePage />
+            </>)
+          }
         </div>
       </div>
     </div>

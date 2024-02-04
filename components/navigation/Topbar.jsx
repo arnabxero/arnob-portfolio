@@ -9,7 +9,7 @@ const Topbar = ({ allTabs, activeTab, setActiveTab }) => {
     };
 
     return (
-        <div className='flex justify-between text-primary border-b border-border'>
+        <div className='flex justify-between text-primary border-b border-border font-bold tracking-widest'>
             <div className='flex'>
                 <div
                     onClick={SetHomeActive}

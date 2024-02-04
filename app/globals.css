@@ -155,22 +155,22 @@
 }
 
 .background-animation::before {
-  width: 10vw;
-  height: 10vw;
+  width: 5vw;
+  height: 5vw;
   animation: moveCircle1 15s infinite alternate;
 }
 
 .background-animation::after {
-  width: 10vw;
-  height: 10vw;
+  width: 5vw;
+  height: 5vw;
   margin-top: -94vh;
   background-image: radial-gradient(circle, #21D4FD, #B721FF);
   animation: moveCircle2 20s infinite alternate;
 }
 
 .background-animation .circle {
-  width: 10vw;
-  height: 10vw;
+  width: 5vw;
+  height: 5vw;
   background-image: radial-gradient(circle, #08AEEA, #2AF598);
   animation: moveCircle3 18s infinite alternate-reverse;
 }
@@ -181,19 +181,19 @@
 }
 
 .theme-rose {
-  --background: #100000;
-  --foreground: #250000;
+  --background: #542d2d;
+  --foreground: #301b1b;
   --card: #FFFFFF;
   --card-foreground: #0A0A0C;
   --popover: #FFFFFF;
   --popover-foreground: #0A0A0C;
-  --primary: #fe3967;
+  --primary: #ff7696;
   --primary-foreground: #ffc9d6;
   --secondary: #cf0030;
   --secondary-foreground: #191A27;
   --muted: #EFF0F4;
   --muted-foreground: #757889;
-  --accent: #ff006a;
+  --accent: #fcb6d3;
   --accent-foreground: #191A27;
   --destructive: #E53935;
   --destructive-foreground: #FAFAFA;
@@ -204,19 +204,19 @@
 }
 
 .theme-night {
-  --background: #010D15;
-  --foreground: #011727;
+  --background: #29363e;
+  --foreground: #1f272d;
   --card: #FFFFFF;
   --card-foreground: #0C1626;
   --popover: #FFFFFF;
   --popover-foreground: #0C1626;
-  --primary: #3994fb;
+  --primary: #69acf9;
   --primary-foreground: #c9cdff;
   --secondary: #005bc4;
   --secondary-foreground: #1C2738;
   --muted: #EAF2FC;
   --muted-foreground: #758BA3;
-  --accent: #0000ff;
+  --accent: #c9c9ff;
   --accent-foreground: #1C2738;
   --destructive: #E53935;
   --destructive-foreground: #F2F6FC;
@@ -227,19 +227,19 @@
 }
 
 .theme-green {
-  --background: #00190c;
-  --foreground: #002411;
+  --background: #2a4336;
+  --foreground: #1a2d23;
   --card: #FFFFFF;
   --card-foreground: #0A0A0C;
   --popover: #FFFFFF;
   --popover-foreground: #0A0A0C;
-  --primary: #3BB273;
+  --primary: #5fc68f;
   --primary-foreground: rgb(235, 255, 240);
   --secondary: #00813c;
   --secondary-foreground: #191A27;
   --muted: #EFF0F4;
   --muted-foreground: #757889;
-  --accent: #00ff95;
+  --accent: #9ef7d2;
   --accent-foreground: #191A27;
   --destructive: #E53935;
   --destructive-foreground: #FAFAFA;
@@ -250,19 +250,19 @@
 }
 
 .theme-orange {
-  --background: #180d00;
-  --foreground: #2c1a00;
+  --background: #4d4134;
+  --foreground: #31291e;
   --card: #FFFFFF;
   --card-foreground: #070504;
   --popover: #FFFFFF;
   --popover-foreground: #070504;
-  --primary: #FF9500;
+  --primary: #fac274;
   --primary-foreground: #ffe7c9;
   --secondary: rgb(189, 95, 0);
   --secondary-foreground: #1A1717;
   --muted: #FEFDFC;
   --muted-foreground: #736C6B;
-  --accent: #ffcc00;
+  --accent: #fae79d;
   --accent-foreground: #1A1717;
   --destructive: #E53935;
   --destructive-foreground: #FEFCF8;
