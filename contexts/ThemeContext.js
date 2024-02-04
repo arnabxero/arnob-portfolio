@@ -22,7 +22,7 @@ export const ThemeProvider = ({ children }) => {
     // Custom function to update the theme and store it in localStorage
     const updateTheme = (newTheme) => {
         setTheme(newTheme);
-        localStorage.setItem('theme', newTheme);
+        // localStorage.setItem('theme', newTheme);
     };
 
     return (
