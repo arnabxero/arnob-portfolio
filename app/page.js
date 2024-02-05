@@ -5,7 +5,7 @@ import Topbar from '@/components/navigation/Topbar';
 import HomePage from '@/components/MainPages/HomePage';
 
 const page = () => {
-  const { theme, setTheme } = useTheme();
+  const { themes, theme, setTheme } = useTheme();
 
   const allTabs = ['_Hello', '_About', '_Projects', '_Researches', '_Contact'];
   const [activeTab, setActiveTab] = useState('_Hello');

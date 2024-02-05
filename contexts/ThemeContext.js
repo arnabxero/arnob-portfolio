@@ -1,28 +1,24 @@
-// context/ThemeContext.js
-'use client'
-import React, { createContext, useState, useContext } from 'react';
+'use client';
+import React, { createContext, useContext, useState, } from "react";
 
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
     const themes = ['theme-night', 'theme-rose', 'theme-green', 'theme-orange'];
 
-    // Function to get a random theme
     const getRandomTheme = () => {
         const randomIndex = Math.floor(Math.random() * themes.length);
         return themes[randomIndex];
     };
 
-    // Get the initial theme from localStorage or set it to a random one if not found
-    const initialTheme = /*localStorage.getItem('theme') ||*/ getRandomTheme();
+    const [theme, setTheme] = useState(null);
 
-    // Set the initial theme
-    const [theme, setTheme] = useState(initialTheme);
+    if (!theme) {
+        setTheme(getRandomTheme());
+    }
 
-    // Custom function to update the theme and store it in localStorage
     const updateTheme = (newTheme) => {
         setTheme(newTheme);
-        // localStorage.setItem('theme', newTheme);
     };
 
     return (
@@ -30,6 +26,6 @@ export const ThemeProvider = ({ children }) => {
             {children}
         </ThemeContext.Provider>
     );
-};
+}
 
 export const useTheme = () => useContext(ThemeContext);
